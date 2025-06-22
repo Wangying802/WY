@@ -29,5 +29,11 @@ usethis::create_package(getwd())
 # 直接新建了一个与文件夹同名的.Rproj文件，默认创建了一些文件：
 # 学习资源：https://mp.weixin.qq.com/s/d-QEJP0aD8Xz7IiHyQDO2Q 内有详细介绍
 
-#
+# 开始写函数
+
+use_r("AHP") # 自动在 R 文件夹下创建并打开 AHP.R
+
+sinew::makeOxygen(AHP) #自动出现函数注释文件
+
+document() #函数文档化 实际上是调用 roxygen2 包生成 man/AHP.Rd.
 
